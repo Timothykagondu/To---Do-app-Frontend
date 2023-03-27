@@ -38,11 +38,11 @@ function Portfolio() {
 <br />
 <br />
 
-      <ul className="list1">
+      <ol className="list1">
         {listItems.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
-      </ul>
+      </ol>
     </div>
     <div>
     </div>
