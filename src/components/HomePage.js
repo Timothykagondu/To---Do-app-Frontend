@@ -14,6 +14,13 @@ function Portfolio() {
         setListItems([...listItems, inputValue]);
         setInputValue('');
       };
+
+      const handleRemoveItem = (index) => {
+        const newList = [...listItems];
+        newList.splice(index, 1);
+        setListItems(newList);
+      };
+        
       return (
         <div className="portfolio">
         <img className="icon" src="https://img.icons8.com/clouds/256/todo-list.png" alt="List"></img> 
@@ -40,7 +47,9 @@ function Portfolio() {
 
       <ol className="list1">
         {listItems.map((item, index) => (
-          <li key={index}>{item}</li>
+          <li key={index}>{item}
+           <button onClick={() => handleRemoveItem(index)}>Remove</button>
+          </li>
         ))}
       </ol>
     </div>
