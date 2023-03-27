@@ -16,7 +16,7 @@ function Portfolio() {
       };
       return (
         <div className="portfolio">
-        <img className="icon" src="https://img.icons8.com/bubbles/256/resume.png" alt="List"></img> 
+        <img className="icon" src="https://img.icons8.com/clouds/256/todo-list.png" alt="List"></img> 
 
     <div className="proj1">
         <h2>
@@ -31,7 +31,7 @@ function Portfolio() {
        
         <div>
       <input type="text" value={inputValue} onChange={handleInputChange} />
-      <button className="btn1" onClick={handleAddItem}> Add Your Project </button>
+      <button className="btn1" onClick={handleAddItem}> Add Your To-Do </button>
 
 <br />
 <br />
